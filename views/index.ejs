@@ -9,8 +9,33 @@
 </head>
 
 <body>
-    <h1>This is my ejs</h1>
+    <div class="container">
+        <h2>Add a task</h2>
+        <form action="/addTask" method='POST'>
+            <input type="text" placeholder="Task" name='taskToDo'>
+            <input type="submit">
+        </form>
+        <ul class="tasks">
+            <h2>Tasks to do:</h2>
+            <% for(let i=0;i < info.length; i++) {%>
 
+                <li class="task">
+                    <span>
+                        <%= info[i].taskToDo %>
+                    </span>
+                    <button class='delete'>Delete</button>
+                    <button class='completed'>Completed</button>
+
+                </li>
+                <% } %>
+        </ul>
+        <ul class="completed">
+            <h2>Completed tasks:</h2>
+
+        </ul>
+
+    </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
