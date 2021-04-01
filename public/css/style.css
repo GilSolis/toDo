@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+.container {
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30%;
+  background: rgb(247, 235, 129);
+  margin-top: 3%;
+  padding-bottom: 1%;
+}
+
+li {
+  list-style: none;
+  width: 99.5%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+}
+li:nth-child(odd) {
+  background-color: #f3cf8d;
+}
+li:nth-child(even) {
+  background-color: rgb(161, 241, 161);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 2%;
+}
+button {
+  width: 25%;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+span {
+  text-align: left;
+}
