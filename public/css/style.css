@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-body {
-}
-
 .container {
   width: 40%;
   border: 2px solid black;
@@ -44,9 +41,13 @@ button {
 
 form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 span {
   text-align: left;
+}
+
+.input {
+  width: 80%;
 }
