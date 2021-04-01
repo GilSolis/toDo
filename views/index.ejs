@@ -24,15 +24,25 @@
                         <%= info[i].taskToDo %>
                     </span>
                     <button class='delete'>Delete</button>
-                    <button class='completed'>Completed</button>
+                    <button class='complete'>Completed</button>
 
                 </li>
                 <% } %>
         </ul>
+
         <ul class="completed">
             <h2>Completed tasks:</h2>
+            <% for(let i=0;i < completed.length; i++) {%>
 
+                <li class="task">
+                    <span>
+                        <%= completed[i].completedTask %>
+                    </span>
+                    <button class='removeCompleted'>Delete</button>
+                </li>
+                <% } %>
         </ul>
+
 
     </div>
     <script src="js/main.js"></script>
